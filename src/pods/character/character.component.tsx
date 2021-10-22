@@ -29,23 +29,7 @@ export const CharacterComponent: React.FunctionComponent<Props> = (props) => {
       enableReinitialize={true}
       validate={formValidation.validateForm}
     >
-      {/* {() => (
-        <Form className={classes.root}>
-          <TextFieldComponent name="name" label="Name" />
-          <TextFieldComponent name="address" label="Address" />
-          <RatingComponent name="rating" max={5} />
-          <TextFieldComponent
-            name="description"
-            label="Description"
-            multiline={true}
-            rows={3}
-            rowsMax={5}
-          />
-          <Button type="submit" variant="contained" color="primary">
-            Save
-          </Button>
-        </Form>
-      )} */}
+  
       {() => (
         <div className={classes.root}>
           <Avatar alt={character.name} src={character.image}  />
